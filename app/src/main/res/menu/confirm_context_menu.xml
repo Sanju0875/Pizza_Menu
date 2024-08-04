@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/single"
+        android:title="Single Life Rccks"
+        />
+    <item
+        android:id="@+id/homeParty"
+        android:title="Home Party"
+        />
+    <item
+        android:id="@+id/officeLunch"
+        android:title="Office Lunch"
+        />
+</menu>

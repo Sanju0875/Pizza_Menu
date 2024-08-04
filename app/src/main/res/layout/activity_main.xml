@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:id="@+id/pizzaLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp">
+
+
+
+
+    <ImageView
+        android:contentDescription="@string/img_desc"
+        android:id="@+id/pizzaBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pizza_base"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:contentDescription="@string/img_desc"
+        android:id="@+id/cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/base_cheese"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:contentDescription="@string/img_desc"
+        android:id="@+id/mushroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mushroom"
+        />
+
+            <ImageView
+                android:visibility="gone"
+                android:contentDescription="@string/img_desc"
+                android:id="@+id/tomato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tomato"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:contentDescription="@string/img_desc"
+                android:id="@+id/olive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/olive"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:contentDescription="@string/img_desc"
+                android:id="@+id/basil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basil"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:contentDescription="@string/img_desc"
+                android:id="@+id/pineapple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pineapple"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    <TableLayout
+        android:id="@+id/chooseOption"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/pizzaLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <CheckBox
+                android:id="@+id/checkCheese"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheese"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkMushroom"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mushroom"
+                />
+
+            <CheckBox
+                android:id="@+id/checkTomato"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tomato"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <CheckBox
+                android:id="@+id/checkOlive"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/olive"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkBasil"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basil"
+                />
+
+            <CheckBox
+                android:id="@+id/checkPineapple"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pineapple"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_below="@+id/chooseOption"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_out"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/button_color"
+            />
+
+</RelativeLayout>
